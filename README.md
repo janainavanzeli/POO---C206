@@ -1,2 +1,2 @@
-# POO---C206
+# POO
 Códigos de Programação Orientada a Objeto.
