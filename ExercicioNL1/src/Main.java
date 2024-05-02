@@ -9,53 +9,18 @@ public class Main {
         Piloto piloto4 = new Piloto("Rubens Barrichello", 43, "Brasileiro");
         Piloto piloto5 = new Piloto("Ricardo Zonta", 65, "Brasileiro");
 
-        equipe.constroiCarro(2, 600,true);
-
-
-        //Adicionando os pilotos
-        equipe.adicionarPiloto(piloto1);
+         equipe.adicionarPiloto(piloto1);
         equipe.adicionarPiloto(piloto2);
         equipe.adicionarPiloto(piloto3);
         equipe.adicionarPiloto(piloto4);
-        System.out.println();
-        //Tentativa de cadastrar o piloto5
-        equipe.adicionarPiloto(piloto5);
 
-        //Definindo o piloto atual
-        equipe.setPilotoAtual(piloto2);
+        equipe.trocarPilotoAtual(1);
+        equipe.pitStop(4, 2);
 
+        equipe.retirarPiloto(3);
+        equipe.adicionarPiloto(new Piloto("Fernando Alonso", 40, "Espanhol"));
 
-        System.out.println();
-
-        //Retirando o piloto da esquipe
-        equipe.retirarPiloto(4);
-
-        System.out.println();
-
-        //Funçao do pitstop
-
-        equipe.pitStop(5,1);
-
-        //Trocar pneus
-        //equipe.trocarPneu(3);
-
-        //trocar piloto atual
-        //equipe.trocarPilotoAtual(1);
-
-        System.out.println();
-        piloto1.correr(1);
-
-
-        //Mostrando os dados do carro
-        piloto1.correr(equipe.getCarro());
-
-        System.out.println();
-
-        //mostrando a equipe
-
-        System.out.println(equipe);
-
-
+        System.out.println(equipe.toString());
 
     }
 }
