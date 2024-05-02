@@ -104,13 +104,11 @@ public class Equipe {
         this.nome = nome;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "Equipe{" +
-                "Lista de pilotos: " + pilotoList +
-                ", Carro: " + carro +
-                ", Piloto Atual: " + pilotoAtual +
-                ", Nome: " + nome +
-                '}';
+    @Override
+    public String toString() {
+        return "Equipe " + nome + "\n" +
+                "Carro: " + carro.toString() + "\n" +
+                "Pilotos: " + Arrays.toString(pilotos) + "\n" +
+                "Piloto atual: " + pilotoAtual.toString();
     }
 }
